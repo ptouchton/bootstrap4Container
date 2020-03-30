@@ -14,7 +14,21 @@
 
 <body>
 
-
+  <nav class="navbar navbar-expand-md bg-info navbar-dark">
+    <div class="container">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="#">Training</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
   <div class="jumbotron jumbotron-fluid bg-info text-white">
     <div class="container text-center">
       <h1 class="display-1">Welcome to the Dojo</h1>
@@ -26,39 +40,47 @@
     <div class="row">
       <div class="col-md-6 col-lg-3">
         <div class="card">
-          <img src="/img/node.png" class="card-img-top img-fluid"/>
+          <img src="/img/node.png" class="card-img-top img-fluid" />
           <div class="card-body">
             <h3 class="card-title">Node.js Training</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At atque unde sequi minus est fuga culpa perferendis accusantium doloribus, perspiciatis beatae nisi voluptate natus praesentium porro. Voluptatum placeat repudiandae quae.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At atque unde sequi minus est
+              fuga culpa perferendis accusantium doloribus, perspiciatis beatae nisi voluptate natus praesentium porro.
+              Voluptatum placeat repudiandae quae.</p>
 
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="card">
-          <img src="/img/mongo.png" class="card-img-top img-fluid"/>
+          <img src="/img/mongo.png" class="card-img-top img-fluid" />
           <div class="card-body">
             <h3 class="card-title">Mongo Training</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At atque unde sequi minus est fuga culpa perferendis accusantium doloribus, perspiciatis beatae nisi voluptate natus praesentium porro. Voluptatum placeat repudiandae quae.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At atque unde sequi minus est
+              fuga culpa perferendis accusantium doloribus, perspiciatis beatae nisi voluptate natus praesentium porro.
+              Voluptatum placeat repudiandae quae.</p>
 
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="card">
-          <img src="/img/react.png" class="card-img-top img-fluid"/>
+          <img src="/img/react.png" class="card-img-top img-fluid" />
           <div class="card-body">
             <h3 class="card-title">React Training</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At atque unde sequi minus est fuga culpa perferendis accusantium doloribus, perspiciatis beatae nisi voluptate natus praesentium porro. Voluptatum placeat repudiandae quae.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At atque unde sequi minus est
+              fuga culpa perferendis accusantium doloribus, perspiciatis beatae nisi voluptate natus praesentium porro.
+              Voluptatum placeat repudiandae quae.</p>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="card">
-          <img src="/img/webpack.png" class="card-img-top img-fluid"/>
+          <img src="/img/webpack.png" class="card-img-top img-fluid" />
           <div class="card-body">
             <h3 class="card-title">Webpack Training</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At atque unde sequi minus est fuga culpa perferendis accusantium doloribus, perspiciatis beatae nisi voluptate natus praesentium porro. Voluptatum placeat repudiandae quae.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At atque unde sequi minus est
+              fuga culpa perferendis accusantium doloribus, perspiciatis beatae nisi voluptate natus praesentium porro.
+              Voluptatum placeat repudiandae quae.</p>
 
           </div>
         </div>
@@ -67,17 +89,40 @@
 
     <h2 class="display-4 text-center py-5 my-4">Meet the speakers</h2>
 
-      <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
-        <a href="" class="nav-link active" href="">The Net Ninja</a>
-        <a href="" class="nav-link" href="">The Web Wizard</a>
-        <a href="" class="nav-link" href="">Captain Code</a>
-        <a href="" class="nav-link" href="">The Angular Avenger</a>
+    <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+      <a class="nav-link active" href="#ninja" data-toggle="tab">The Net Ninja</a>
+      <a class="nav-link" href="#wizard" data-toggle="tab">The Web Wizard</a>
+      <a class="nav-link" href="#captain" data-toggle="tab">Captain Code</a>
+      <a class="nav-link" href="#avenger" data-toggle="tab">The Angular Avenger</a>
 
-      </nav>
+    </nav>
 
-      <div class="tab-content py-5">
-        
+    <div class="tab-content py-5">
+      <div class="tab-pane fade show active" id="ninja">
+        <h3>The Net Ninja</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste minus excepturi repudiandae, quas at quos,
+          natus adipisci similique debitis beatae ipsa atque aperiam molestiae tenetur eveniet ipsam quia nisi! Totam.
+        </p>
       </div>
+      <div class="tab-pane fade" id="wizard">
+        <h3>The Web Wizard</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste minus excepturi repudiandae, quas at quos,
+          natus adipisci similique debitis beatae ipsa atque aperiam molestiae tenetur eveniet ipsam quia nisi! Totam.
+        </p>
+      </div>
+      <div class="tab-pane fade" id="captain">
+        <h3>Captain Code</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste minus excepturi repudiandae, quas at quos,
+          natus adipisci similique debitis beatae ipsa atque aperiam molestiae tenetur eveniet ipsam quia nisi! Totam.
+        </p>
+      </div>
+      <div class="tab-pane fade" id="avenger">
+        <h3>Angular Avenger</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste minus excepturi repudiandae, quas at quos,
+          natus adipisci similique debitis beatae ipsa atque aperiam molestiae tenetur eveniet ipsam quia nisi! Totam.
+        </p>
+      </div>
+    </div>
   </div>
 
   <!-- Optional JavaScript -->
